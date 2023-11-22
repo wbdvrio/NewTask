@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Catalog</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <style>
+      .container {
+        margin: 20px auto;
+      }
+
+      .col {
+        background-color: rgb(246, 132, 132);
+        border: 1px solid black;
+        text-align: center;
+        padding: 25px;
+      }
+
+      .price {
+        color: rgb(130, 9, 9);
+        font-weight: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col">
+        <img
+          src="assets/images/diaper.jpg"
+          class="img-fluid"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          alt=""
+          srcset=""
+        />
+        <p>DIAPER</p>
+        <p>1pack</p>
+        <p class="price">350.00</p>
+        <button class="btn btn-primary">Add to Cart</button>
+      </div>
+
+      <div class="col">
+        <img
+          src="assets/images/wipes.jpeg"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          class="img-fluid"
+          alt=""
+        />
+        <p>WIPES</p>
+        <p>1pack</p>
+        <p class="price">95.00</p>
+        <button class="btn btn-primary">Add to Cart</button>
+      </div>
+
+      <div class="col">
+        <img
+          src="assets/images/shampoo.jpg"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          class="img-fluid"
+          alt=""
+        />
+        <p>SHAMPOO</p>
+        <p>750ml</p>
+        <p class="price">400.00</p>
+        <button class="btn btn-primary">Add to Cart</button>
+      </div>
+      <div class="col">
+        <img
+          src="assets/images/soap.webp"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          class="img-fluid"
+          alt=""
+        />
+        <p>SOAP</p>
+        <p>750ml</p>
+        <p class="price">400.00</p>
+        <button class="btn btn-primary">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="" id="ImageEnlarge" class="img-fluid" alt="image" />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/myjavascript.js"></script>
+  </body>
+</html>
